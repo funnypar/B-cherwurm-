@@ -9,6 +9,10 @@ module.exports = {
       width: {
         wbox: "92vw",
       },
+      fontFamily: {
+        title: "Rubik Distressed",
+        user: "Caveat",
+      },
     },
   },
   plugins: [],
