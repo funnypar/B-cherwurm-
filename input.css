@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Rubik+Microbe&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -15,5 +16,5 @@
   @apply bg-gray-100 h-hbox mx-12 w-wbox rounded-lg shadow-2xl;
 }
 .nav {
-  @apply flex justify-between shadow rounded-b-3xl rounded-lg p-2 bg-gray-100;
+  @apply h-1/7 flex justify-between shadow rounded-b-3xl rounded-lg p-2 bg-gray-100;
 }
