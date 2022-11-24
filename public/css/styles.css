@@ -535,27 +535,21 @@ video {
   left: 0px;
 }
 
-.z-10{
-  z-index: 10;
+.bottom-0{
+  bottom: 0px;
 }
 
 .z-20{
   z-index: 20;
 }
 
+.z-10{
+  z-index: 10;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-5{
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
-.my-10{
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
 }
 
 .my-7{
@@ -573,14 +567,6 @@ video {
 
 .mr-3{
   margin-right: 0.75rem;
-}
-
-.ml-3{
-  margin-left: 0.75rem;
-}
-
-.mr-1{
-  margin-right: 0.25rem;
 }
 
 .mr-2{
@@ -611,6 +597,10 @@ video {
   height: 1.5rem;
 }
 
+.h-7{
+  height: 1.75rem;
+}
+
 .w-8{
   width: 2rem;
 }
@@ -619,8 +609,20 @@ video {
   width: 2.5rem;
 }
 
+.w-1\/5{
+  width: 20%;
+}
+
 .w-6{
   width: 1.5rem;
+}
+
+.w-1{
+  width: 0.25rem;
+}
+
+.w-9\/12{
+  width: 75%;
 }
 
 .cursor-pointer{
@@ -635,6 +637,10 @@ video {
   align-content: center;
 }
 
+.items-end{
+  align-items: flex-end;
+}
+
 .items-center{
   align-items: center;
 }
@@ -647,29 +653,24 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-b-lg{
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
 .bg-gray-200{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
+.bg-red-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
 .object-bottom{
   -o-object-position: bottom;
      object-position: bottom;
-}
-
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .pt-24{
@@ -682,6 +683,18 @@ video {
 
 .pr-0{
   padding-right: 0px;
+}
+
+.pl-0{
+  padding-left: 0px;
+}
+
+.pl-inherit{
+  padding-left: inherit;
+}
+
+.pb-3{
+  padding-bottom: 0.75rem;
 }
 
 .text-center{
@@ -700,9 +713,23 @@ video {
   font-family: Dancing Script;
 }
 
+.font-mono{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-semibold{

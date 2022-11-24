@@ -16,6 +16,12 @@ module.exports = {
         user: "Caveat",
         navItems: "Dancing Script",
       },
+      margin: {
+        50: "50%",
+      },
+      padding: {
+        inherit: "inherit",
+      },
     },
   },
   plugins: [],

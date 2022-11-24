@@ -45,10 +45,12 @@
         </div>
       </nav>
       <!-- list of nav -->
-      <div class="bg-gray-200 h-full absolute top-0 left-0 pt-24 z-10">
+      <div
+        class="bg-gray-200 h-full absolute top-0 left-0 pt-24 z-10 w-1/5 rounded-b-lg"
+      >
         <ul class="pl-5 pr-0">
-          <li class="text-right mr-2">
-            <a href="#" class="flex justify-end">
+          <li class="text-right">
+            <a href="#" class="flex justify-end" id="li1">
               <span class="capitalize font-navItems font-semibold text-xl mr-3"
                 >hause</span
               >
@@ -59,7 +61,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6"
+                  class="w-6 h-6 mr-2"
                 >
                   <path
                     stroke-linecap="round"
@@ -68,9 +70,10 @@
                   />
                 </svg>
               </span>
+              <span class="bg-red-700 h-7 w-1 items-end" id="border1"></span>
             </a>
           </li>
-          <li class="text-right mr-2 my-7">
+          <li class="text-right mr-2 my-7" id="li2">
             <a href="#" class="flex justify-end">
               <span class="capitalize font-navItems font-semibold text-xl mr-3"
                 >buchsuche</span
@@ -93,7 +96,7 @@
               </span>
             </a>
           </li>
-          <li class="text-right mr-2 my-7">
+          <li class="text-right mr-2 my-7" id="li3">
             <a href="#" class="flex justify-end">
               <span class="capitalize font-navItems font-semibold text-xl mr-3"
                 >artikel</span
@@ -139,8 +142,14 @@
               </span>
             </a>
           </li>
+          <p
+            class="bottom-0 absolute text-center w-9/12 pl-inherit text-xs font-mono pb-3 uppercase"
+          >
+            this project create just for learn Tailwind by Mopano &COPY; 2022
+          </p>
         </ul>
       </div>
     </main>
+    <script src="../public/js/index.js"></script>
   </body>
 </html>
