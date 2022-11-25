@@ -45,8 +45,8 @@
         </div>
       </nav>
       <!-- list of nav -->
-      <div
-        class="bg-gray-200 h-full absolute top-0 left-0 pt-24 z-10 w-1/5 rounded-b-lg"
+      <section
+        class="bg-gray-200 h-full absolute top-0 left-0 pt-24 z-10 w-1/5 rounded-b-lg hidden"
       >
         <ul class="pl-5 pr-0">
           <li class="text-right">
@@ -148,7 +148,41 @@
             this project create just for learn Tailwind by Mopano &COPY; 2022
           </p>
         </ul>
-      </div>
+      </section>
+      <!-- cards of books -->
+      <section class="mx-3 my-3">
+        <!-- card -->
+        <div class="w-1/6 absolute bg-gray-200 rounded-3xl shadow-lg">
+          <img
+            src="./img/1984.jpg"
+            alt="1984"
+            class="w-full h-60 rounded-3xl"
+          />
+
+          <div>
+            <ul class="p-3">
+              <li>
+                <span class="capitalize font-navItems"
+                  >name : <span class="capitalize font-user">1984</span></span
+                >
+              </li>
+              <li>
+                <span class="capitalize font-navItems"
+                  >Schriftsteller(in) :
+                  <span class="capitalize font-user">george orwell</span></span
+                >
+              </li>
+            </ul>
+            <div class="flex justify-center">
+              <button
+                class="capitalize flex px-2 py-0.5 border-red-600 border-2 rounded-full font-navItems mb-2 hover:text-white hover:bg-red-600 transition-all"
+              >
+                mehr
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="../public/js/index.js"></script>
   </body>
