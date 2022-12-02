@@ -10,7 +10,7 @@
   <body class="body">
     <main class="box relative overflow-scroll">
       <!-- Navbar -->
-      <nav class="nav z-20 relative">
+      <nav class="nav z-20">
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -19,6 +19,7 @@
             stroke-width="1.5"
             stroke="currentColor"
             class="w-8 h-8 ml-4 cursor-pointer hover:scale-125"
+            id="navBtn"
           >
             <path
               stroke-linecap="round"
@@ -45,11 +46,9 @@
         </div>
       </nav>
       <!-- list of nav -->
-      <section
-        class="bg-gray-200 h-full absolute top-0 left-0 pt-24 z-10 w-1/5 rounded-b-lg hidden"
-      >
-        <ul class="pl-5 pr-0">
-          <li class="text-right">
+      <section class="navBox hidden">
+        <ul class="flex flex-col pl-5 pr-0 pt-16 h-full">
+          <li class="text-right mb-4">
             <a href="#" class="flex justify-end" id="li1">
               <span class="capitalize font-navItems font-semibold text-xl mr-3"
                 >hause</span
@@ -73,7 +72,7 @@
               <span class="bg-red-700 h-7 w-1 items-end" id="border1"></span>
             </a>
           </li>
-          <li class="text-right mr-2 my-7" id="li2">
+          <li class="text-right mr-2 my-4" id="li2">
             <a href="#" class="flex justify-end">
               <span class="capitalize font-navItems font-semibold text-xl mr-3"
                 >buchsuche</span
@@ -96,7 +95,7 @@
               </span>
             </a>
           </li>
-          <li class="text-right mr-2 my-7" id="li3">
+          <li class="text-right mr-2 my-4" id="li3">
             <a href="#" class="flex justify-end">
               <span class="capitalize font-navItems font-semibold text-xl mr-3"
                 >artikel</span
@@ -119,7 +118,7 @@
               </span>
             </a>
           </li>
-          <li class="text-right mr-2 my-7">
+          <li class="text-right mr-2 my-4">
             <a href="#" class="flex justify-end">
               <span class="capitalize font-navItems font-semibold text-xl mr-3"
                 >verbinden sich mit mir</span
@@ -142,283 +141,290 @@
               </span>
             </a>
           </li>
-          <p
-            class="bottom-0 absolute text-center w-9/12 pl-inherit text-xs font-mono pb-3 uppercase"
-          >
-            this project create just for learn Tailwind by Mopano &COPY; 2022
-          </p>
         </ul>
       </section>
       <!-- cards of books -->
-      <section class="mx-12 my-10 flex justify-around flex-wrap gap-16">
-        <!-- card -->
-        <div class="w-1/6 bg-gray-200 rounded-3xl shadow-lg">
-          <img
-            src="./img/1984.jpg"
-            alt="1984"
-            class="w-full h-60 rounded-3xl"
-          />
+      <div class="absolute top-20">
+        <section
+          class="mx-12 my-10 flex justify-around flex-wrap gap-16"
+          id="cards"
+        >
+          <!-- card -->
+          <div class="w-1/6 bg-gray-200 rounded-3xl shadow-lg">
+            <img
+              src="./img/1984.jpg"
+              alt="1984"
+              class="w-full h-60 rounded-3xl"
+            />
 
-          <div>
-            <ul class="p-3">
-              <li>
-                <span class="capitalize font-navItems"
-                  >name : <span class="capitalize font-user">1984</span></span
+            <div>
+              <ul class="p-3">
+                <li>
+                  <span class="capitalize font-navItems"
+                    >name : <span class="capitalize font-user">1984</span></span
+                  >
+                </li>
+                <li>
+                  <span class="capitalize font-navItems"
+                    >Schriftsteller(in) :
+                    <span class="capitalize font-user"
+                      >george orwell</span
+                    ></span
+                  >
+                </li>
+              </ul>
+              <div class="flex justify-center">
+                <button
+                  class="capitalize flex px-2 py-0.5 border-red-600 border-2 rounded-full font-navItems mb-2 hover:text-white hover:bg-red-600 transition-all"
                 >
-              </li>
-              <li>
-                <span class="capitalize font-navItems"
-                  >Schriftsteller(in) :
-                  <span class="capitalize font-user">george orwell</span></span
-                >
-              </li>
-            </ul>
-            <div class="flex justify-center">
-              <button
-                class="capitalize flex px-2 py-0.5 border-red-600 border-2 rounded-full font-navItems mb-2 hover:text-white hover:bg-red-600 transition-all"
-              >
-                mehr
-              </button>
+                  mehr
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- card -->
-        <div class="w-1/6 bg-gray-200 rounded-3xl shadow-lg">
-          <img
-            src="./img/nausea.jpg"
-            alt="nausea"
-            class="w-full h-60 rounded-3xl"
-          />
+          <!-- card -->
+          <div class="w-1/6 bg-gray-200 rounded-3xl shadow-lg">
+            <img
+              src="./img/nausea.jpg"
+              alt="nausea"
+              class="w-full h-60 rounded-3xl"
+            />
 
-          <div>
-            <ul class="p-3">
-              <li>
-                <span class="capitalize font-navItems"
-                  >name : <span class="capitalize font-user">nausea</span></span
+            <div>
+              <ul class="p-3">
+                <li>
+                  <span class="capitalize font-navItems"
+                    >name :
+                    <span class="capitalize font-user">nausea</span></span
+                  >
+                </li>
+                <li>
+                  <span class="capitalize font-navItems"
+                    >Schriftsteller(in) :
+                    <span class="capitalize font-user"
+                      >jean paul sartre</span
+                    ></span
+                  >
+                </li>
+              </ul>
+              <div class="flex justify-center">
+                <button
+                  class="capitalize flex px-2 py-0.5 border-red-600 border-2 rounded-full font-navItems mb-2 hover:text-white hover:bg-red-600 transition-all"
                 >
-              </li>
-              <li>
-                <span class="capitalize font-navItems"
-                  >Schriftsteller(in) :
-                  <span class="capitalize font-user"
-                    >jean paul sartre</span
-                  ></span
-                >
-              </li>
-            </ul>
-            <div class="flex justify-center">
-              <button
-                class="capitalize flex px-2 py-0.5 border-red-600 border-2 rounded-full font-navItems mb-2 hover:text-white hover:bg-red-600 transition-all"
-              >
-                mehr
-              </button>
+                  mehr
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- card -->
-        <div class="w-1/6 bg-gray-200 rounded-3xl shadow-lg">
-          <img
-            src="./img/godDelusion.jpg"
-            alt="godDelusion"
-            class="w-full h-60 rounded-3xl"
-          />
+          <!-- card -->
+          <div class="w-1/6 bg-gray-200 rounded-3xl shadow-lg">
+            <img
+              src="./img/godDelusion.jpg"
+              alt="godDelusion"
+              class="w-full h-60 rounded-3xl"
+            />
 
-          <div>
-            <ul class="p-3">
-              <li>
-                <span class="capitalize font-navItems"
-                  >name :
-                  <span class="capitalize font-user"
-                    >the god delusion</span
-                  ></span
+            <div>
+              <ul class="p-3">
+                <li>
+                  <span class="capitalize font-navItems"
+                    >name :
+                    <span class="capitalize font-user"
+                      >the god delusion</span
+                    ></span
+                  >
+                </li>
+                <li>
+                  <span class="capitalize font-navItems"
+                    >Schriftsteller(in) :
+                    <span class="capitalize font-user"
+                      >richard dawkings</span
+                    ></span
+                  >
+                </li>
+              </ul>
+              <div class="flex justify-center">
+                <button
+                  class="capitalize flex px-2 py-0.5 border-red-600 border-2 rounded-full font-navItems mb-2 hover:text-white hover:bg-red-600 transition-all"
                 >
-              </li>
-              <li>
-                <span class="capitalize font-navItems"
-                  >Schriftsteller(in) :
-                  <span class="capitalize font-user"
-                    >richard dawkings</span
-                  ></span
-                >
-              </li>
-            </ul>
-            <div class="flex justify-center">
-              <button
-                class="capitalize flex px-2 py-0.5 border-red-600 border-2 rounded-full font-navItems mb-2 hover:text-white hover:bg-red-600 transition-all"
-              >
-                mehr
-              </button>
+                  mehr
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- card -->
-        <div class="w-1/6 bg-gray-200 rounded-3xl shadow-lg">
-          <img
-            src="./img/animalFarm.jpg"
-            alt="animalFarm"
-            class="w-full h-60 rounded-3xl"
-          />
+          <!-- card -->
+          <div class="w-1/6 bg-gray-200 rounded-3xl shadow-lg">
+            <img
+              src="./img/animalFarm.jpg"
+              alt="animalFarm"
+              class="w-full h-60 rounded-3xl"
+            />
 
-          <div>
-            <ul class="p-3">
-              <li>
-                <span class="capitalize font-navItems"
-                  >name :
-                  <span class="capitalize font-user">animal farm</span></span
+            <div>
+              <ul class="p-3">
+                <li>
+                  <span class="capitalize font-navItems"
+                    >name :
+                    <span class="capitalize font-user">animal farm</span></span
+                  >
+                </li>
+                <li>
+                  <span class="capitalize font-navItems"
+                    >Schriftsteller(in) :
+                    <span class="capitalize font-user"
+                      >george orwell</span
+                    ></span
+                  >
+                </li>
+              </ul>
+              <div class="flex justify-center">
+                <button
+                  class="capitalize flex px-2 py-0.5 border-red-600 border-2 rounded-full font-navItems mb-2 hover:text-white hover:bg-red-600 transition-all"
                 >
-              </li>
-              <li>
-                <span class="capitalize font-navItems"
-                  >Schriftsteller(in) :
-                  <span class="capitalize font-user">george orwell</span></span
-                >
-              </li>
-            </ul>
-            <div class="flex justify-center">
-              <button
-                class="capitalize flex px-2 py-0.5 border-red-600 border-2 rounded-full font-navItems mb-2 hover:text-white hover:bg-red-600 transition-all"
-              >
-                mehr
-              </button>
+                  mehr
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- card -->
-        <div class="w-1/6 bg-gray-200 rounded-3xl shadow-lg">
-          <img
-            src="./img/theStranger.jpg"
-            alt="theStranger"
-            class="w-full h-60 rounded-3xl"
-          />
+          <!-- card -->
+          <div class="w-1/6 bg-gray-200 rounded-3xl shadow-lg">
+            <img
+              src="./img/theStranger.jpg"
+              alt="theStranger"
+              class="w-full h-60 rounded-3xl"
+            />
 
-          <div>
-            <ul class="p-3">
-              <li>
-                <span class="capitalize font-navItems"
-                  >name :
-                  <span class="capitalize font-user">the stranger</span></span
+            <div>
+              <ul class="p-3">
+                <li>
+                  <span class="capitalize font-navItems"
+                    >name :
+                    <span class="capitalize font-user">the stranger</span></span
+                  >
+                </li>
+                <li>
+                  <span class="capitalize font-navItems"
+                    >Schriftsteller(in) :
+                    <span class="capitalize font-user">albert camus</span></span
+                  >
+                </li>
+              </ul>
+              <div class="flex justify-center">
+                <button
+                  class="capitalize flex px-2 py-0.5 border-red-600 border-2 rounded-full font-navItems mb-2 hover:text-white hover:bg-red-600 transition-all"
                 >
-              </li>
-              <li>
-                <span class="capitalize font-navItems"
-                  >Schriftsteller(in) :
-                  <span class="capitalize font-user">albert camus</span></span
-                >
-              </li>
-            </ul>
-            <div class="flex justify-center">
-              <button
-                class="capitalize flex px-2 py-0.5 border-red-600 border-2 rounded-full font-navItems mb-2 hover:text-white hover:bg-red-600 transition-all"
-              >
-                mehr
-              </button>
+                  mehr
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- card -->
-        <div class="w-1/6 bg-gray-200 rounded-3xl shadow-lg">
-          <img
-            src="./img/metamorphosis.jpg"
-            alt="metamorphosis"
-            class="w-full h-60 rounded-3xl"
-          />
+          <!-- card -->
+          <div class="w-1/6 bg-gray-200 rounded-3xl shadow-lg">
+            <img
+              src="./img/metamorphosis.jpg"
+              alt="metamorphosis"
+              class="w-full h-60 rounded-3xl"
+            />
 
-          <div>
-            <ul class="p-3">
-              <li>
-                <span class="capitalize font-navItems"
-                  >name :
-                  <span class="capitalize font-user"
-                    >the metamorphosis</span
-                  ></span
+            <div>
+              <ul class="p-3">
+                <li>
+                  <span class="capitalize font-navItems"
+                    >name :
+                    <span class="capitalize font-user"
+                      >the metamorphosis</span
+                    ></span
+                  >
+                </li>
+                <li>
+                  <span class="capitalize font-navItems"
+                    >Schriftsteller(in) :
+                    <span class="capitalize font-user">franz kafka</span></span
+                  >
+                </li>
+              </ul>
+              <div class="flex justify-center">
+                <button
+                  class="capitalize flex px-2 py-0.5 border-red-600 border-2 rounded-full font-navItems mb-2 hover:text-white hover:bg-red-600 transition-all"
                 >
-              </li>
-              <li>
-                <span class="capitalize font-navItems"
-                  >Schriftsteller(in) :
-                  <span class="capitalize font-user">franz kafka</span></span
-                >
-              </li>
-            </ul>
-            <div class="flex justify-center">
-              <button
-                class="capitalize flex px-2 py-0.5 border-red-600 border-2 rounded-full font-navItems mb-2 hover:text-white hover:bg-red-600 transition-all"
-              >
-                mehr
-              </button>
+                  mehr
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- card -->
-        <div class="w-1/6 bg-gray-200 rounded-3xl shadow-lg">
-          <img
-            src="./img/aFractionOfTheWhole.jpg"
-            alt="aFractionOfTheWhole"
-            class="w-full h-60 rounded-3xl"
-          />
+          <!-- card -->
+          <div class="w-1/6 bg-gray-200 rounded-3xl shadow-lg">
+            <img
+              src="./img/aFractionOfTheWhole.jpg"
+              alt="aFractionOfTheWhole"
+              class="w-full h-60 rounded-3xl"
+            />
 
-          <div>
-            <ul class="p-3">
-              <li>
-                <span class="capitalize font-navItems"
-                  >name :
-                  <span class="capitalize font-user"
-                    >a fraction of the whole</span
-                  ></span
+            <div>
+              <ul class="p-3">
+                <li>
+                  <span class="capitalize font-navItems"
+                    >name :
+                    <span class="capitalize font-user"
+                      >a fraction of the whole</span
+                    ></span
+                  >
+                </li>
+                <li>
+                  <span class="capitalize font-navItems"
+                    >Schriftsteller(in) :
+                    <span class="capitalize font-user">steve toltz</span></span
+                  >
+                </li>
+              </ul>
+              <div class="flex justify-center">
+                <button
+                  class="capitalize flex px-2 py-0.5 border-red-600 border-2 rounded-full font-navItems mb-2 hover:text-white hover:bg-red-600 transition-all"
                 >
-              </li>
-              <li>
-                <span class="capitalize font-navItems"
-                  >Schriftsteller(in) :
-                  <span class="capitalize font-user">steve toltz</span></span
-                >
-              </li>
-            </ul>
-            <div class="flex justify-center">
-              <button
-                class="capitalize flex px-2 py-0.5 border-red-600 border-2 rounded-full font-navItems mb-2 hover:text-white hover:bg-red-600 transition-all"
-              >
-                mehr
-              </button>
+                  mehr
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- card -->
-        <div class="w-1/6 bg-gray-200 rounded-3xl shadow-lg">
-          <img
-            src="./img/diaryOfAMadmanAndOtherStories.jpg"
-            alt="diaryOfAMadmanAndOtherStories"
-            class="w-full h-60 rounded-3xl"
-          />
+          <!-- card -->
+          <div class="w-1/6 bg-gray-200 rounded-3xl shadow-lg">
+            <img
+              src="./img/diaryOfAMadmanAndOtherStories.jpg"
+              alt="diaryOfAMadmanAndOtherStories"
+              class="w-full h-60 rounded-3xl"
+            />
 
-          <div>
-            <ul class="p-3">
-              <li>
-                <span class="capitalize font-navItems"
-                  >name :
-                  <span class="capitalize font-user"
-                    >diary of a madman and other stories</span
-                  ></span
+            <div>
+              <ul class="p-3">
+                <li>
+                  <span class="capitalize font-navItems"
+                    >name :
+                    <span class="capitalize font-user"
+                      >diary of a madman and other stories</span
+                    ></span
+                  >
+                </li>
+                <li>
+                  <span class="capitalize font-navItems"
+                    >Schriftsteller(in) :
+                    <span class="capitalize font-user"
+                      >nikolai gogol</span
+                    ></span
+                  >
+                </li>
+              </ul>
+              <div class="flex justify-center">
+                <button
+                  class="capitalize flex px-2 py-0.5 border-red-600 border-2 rounded-full font-navItems mb-2 hover:text-white hover:bg-red-600 transition-all"
                 >
-              </li>
-              <li>
-                <span class="capitalize font-navItems"
-                  >Schriftsteller(in) :
-                  <span class="capitalize font-user">nikolai gogol</span></span
-                >
-              </li>
-            </ul>
-            <div class="flex justify-center">
-              <button
-                class="capitalize flex px-2 py-0.5 border-red-600 border-2 rounded-full font-navItems mb-2 hover:text-white hover:bg-red-600 transition-all"
-              >
-                mehr
-              </button>
+                  mehr
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
-    <script src="../public/js/index.js"></script>
+    <script src="../public/js/js.js"></script>
   </body>
 </html>

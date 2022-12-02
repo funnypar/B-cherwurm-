@@ -10,6 +10,7 @@ module.exports = {
       },
       width: {
         wbox: "92vw",
+        inherit: "inherit",
       },
       fontFamily: {
         title: "Rubik Distressed",
