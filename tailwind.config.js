@@ -19,6 +19,7 @@ module.exports = {
       },
       margin: {
         50: "50%",
+        cRem: "40rem",
       },
       padding: {
         inherit: "inherit",
